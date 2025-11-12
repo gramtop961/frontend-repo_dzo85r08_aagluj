@@ -2,16 +2,17 @@
   "manifest_version": 3,
   "name": "WatchDog In-Content Analyzer",
   "description": "Detect and flag abusive content directly on sites like YouTube, Instagram, and Twitter/X using the WatchDog backend.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "icons": {
     "16": "icon-16.png",
     "48": "icon-48.png",
     "128": "icon-128.png"
   },
   "action": {
-    "default_title": "WatchDog"
+    "default_title": "WatchDog",
+    "default_popup": "popup.html"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
   "host_permissions": [
     "https://*/*",
     "http://*/*"
